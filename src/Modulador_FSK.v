@@ -20,8 +20,10 @@ module Modulador_FSK #(
 
     localparam ciclos_0 = freq_reloj/freq_0;
     localparam ciclos_1 = freq_reloj/freq_1;
-    localparam [7:0] semiciclos_0 = ciclos_0/2;
-    localparam [7:0] semiciclos_1 = ciclos_1/2;
+    localparam integer SEMICICLOS_0_INT = ciclos_0 / 2; //Lineas que nacen del flujo de trabajo comprobado en el git por unos warnings que saltaban al pasar de 32 bits a 8
+    localparam integer SEMICICLOS_1_INT = ciclos_1 / 2;
+    localparam [7:0] semiciclos_0 = SEMICICLOS_0_INT[7:0];
+    localparam [7:0] semiciclos_1 = SEMICICLOS_1_INT[7:0];
 
     reg [7:0] cont;
     reg [7:0] semi_ciclos;
