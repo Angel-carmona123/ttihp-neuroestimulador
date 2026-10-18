@@ -22,7 +22,7 @@ module tt_um_Angel_carmona123_neuro (
     .uo_out(uo_out),
     .uio_out(uio_out),
     .uio_oe(uio_oe),
-    .uio_in(uio_in)
+    .uio_in(uio_in),
     .clk(clk),
     .rst_n(rst_n),
     .ena(ena)
