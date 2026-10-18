@@ -3,9 +3,9 @@
 
 
 module Modulador_FSK #(
-    parameter [7:0] freq_reloj = 10_000_000,
-    parameter [7:0] freq_0     = 125_000,
-    parameter [7:0] freq_1     = 250_000
+    parameter freq_reloj = 10_000_000,
+    parameter freq_0     = 125_000,
+    parameter freq_1     = 250_000
 )(
     input wire clk,
     input wire reset,
@@ -20,8 +20,8 @@ module Modulador_FSK #(
 
     localparam ciclos_0 = freq_reloj/freq_0;
     localparam ciclos_1 = freq_reloj/freq_1;
-    localparam semiciclos_0 = ciclos_0/2;
-    localparam semiciclos_1 = ciclos_1/2;
+    localparam [7:0] semiciclos_0 = ciclos_0/2;
+    localparam [7:0] semiciclos_1 = ciclos_1/2;
 
     reg [7:0] cont;
     reg [7:0] semi_ciclos;
