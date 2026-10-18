@@ -1,8 +1,5 @@
 `default_nettype none
 
-`timescale 1ns / 1ps
-
-
 module Almacen_Mensaje(
     input wire clk,
     input wire reset,

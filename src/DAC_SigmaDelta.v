@@ -1,6 +1,5 @@
 `default_nettype none
 
-`timescale 1ns / 1ps
  
 module DAC_SigmaDelta #(
     parameter N = 10                      //Ancho de la muestra de entrada

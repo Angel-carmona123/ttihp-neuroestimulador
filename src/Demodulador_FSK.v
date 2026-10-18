@@ -1,6 +1,5 @@
 `default_nettype none
 
-`timescale 1ns / 1ps
 
 
 module Demodulador_FSK #(
@@ -32,7 +31,7 @@ module Demodulador_FSK #(
     //abajo o por el contrario se queda por arriba de esa media y de esa manera ver si es un
     //0 o un 1 lo que me estan mandando
     
-    localparam media_ciclos = (ciclos_f0 + ciclos_f1) / 2; //La media de los dos es de unos 60 ciclos
+    localparam [7:0] media_ciclos = (ciclos_f0 + ciclos_f1) / 2; //La media de los dos es de unos 60 ciclos
 
     //Para intentar solucionar el problema de la estabilidad entre la antena y el reloj interno
     //del ASIC vamos a poner dos registros que me van a guardar los datos en diferentes tiempos

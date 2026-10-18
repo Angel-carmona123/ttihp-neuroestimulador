@@ -1,7 +1,5 @@
 `default_nettype none
 
-`timescale 1ns / 1ps
-
 
 module FSM_Principal(
     input wire clk,
@@ -193,7 +191,7 @@ module FSM_Principal(
                                 byte_a_transmitir <= letra_amplitud;
                             end
                             3'd3: begin
-                                byte_a_transmitir <= repeticiones;
+                                byte_a_transmitir <= {5'b0,repeticiones};
                             end
                             3'd4: begin
                                 byte_a_transmitir <= 8'h00; //Cola: empuja REP fuera del pipeline                                

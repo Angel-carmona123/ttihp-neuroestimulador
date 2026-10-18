@@ -1,6 +1,6 @@
 `default_nettype none
 
-`timescale 1ns / 1ps
+
 
 //Bloque que va a estar siempre despierto escuchando el canal para identificar el Sync_Word 
 //Una vez detectado, enciende el resto del ASIC

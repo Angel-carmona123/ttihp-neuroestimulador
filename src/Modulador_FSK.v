@@ -1,11 +1,11 @@
 `default_nettype none
 
-`timescale 1ns / 1ps
+
 
 module Modulador_FSK #(
-    parameter freq_reloj = 10_000_000,
-    parameter freq_0     = 125_000,
-    parameter freq_1     = 250_000
+    parameter [7:0] freq_reloj = 10_000_000,
+    parameter [7:0] freq_0     = 125_000,
+    parameter [7:0] freq_1     = 250_000
 )(
     input wire clk,
     input wire reset,
