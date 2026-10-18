@@ -30,6 +30,7 @@ project:
     - "Modulador_FSK.v"
     - "Serializador.v"
     - "Transmisor.v"
+    - "RM_IHPSG13_1P_256x8_c3_bm_bist.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).

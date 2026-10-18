@@ -205,7 +205,7 @@ SRAM_IHP(
     .A_REN(sram_ren),      //Read Enable desde nuestro MUX
     .A_ADDR(sram_addr),    //Dirección desde nuestro MUX
     .A_DIN(byte_entrada),  //Datos desde el Almacén
-    .A_DLY(1'b0),          //Delay 
+    .A_DLY(1'b1),          //Delay 
     .A_DOUT(dato_leido),   //Datos hacia la FSM
     .A_BM(8'hFF),          //Bit Mask (8'hFF = no enmascarar)
         
